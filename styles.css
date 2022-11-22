@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, rgb(6, 6, 170), rgb(5, 119, 5), rgb(199, 199, 30));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.playing-field {
+    display: flex;
+    gap: 1em;
+}
+
+.player-guess-field {
+    font-size: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.player-guess-btn {
+    padding: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: black;
+    color: white;
+    border-radius: 0.5em;
+    border-color: blueviolet;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.player-guess-btn:hover {
+    background-color: white;
+    color: black;
+}
+.scoreboard {
+    position: absolute;
+
+    top: 3em;
+    right: 3em;
+
+    background-color: rgba(0, 0, 0, 0.199);
+}
+.player-one-score, 
+.player-two-score,
+.player-guess-msg,
+h3 {
+    color: white;
+    text-shadow: 3px 3px black;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
